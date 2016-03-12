@@ -127,6 +127,7 @@ while (choice != '0'):
 
 	choice = input("What would you like to do? ")
 
+	# If the choice is getHammingDistance
 	if (choice == '1'):
 		str1 = input("Enter the first string: ")
 		str2 = input("Enter the second string: ")
@@ -138,12 +139,14 @@ while (choice != '0'):
 		else:
 			print ("The length of the two strings are not equal!")
 
+	# If the choice is countSubstrPattern
 	elif (choice == '2'):
 		original = input("Enter the string: ")
 		pattern = input("Enter the pattern: ")
 
 		print ("The number of overlapping substring pattern is", countSubstrPattern(original, pattern))
 
+	# If the choice is isValidString
 	elif (choice == '3'):
 		string = input("Enter the string: ")
 		alphabet = input("Enter the alphabet: ")
@@ -153,6 +156,7 @@ while (choice != '0'):
 		else:
 			print ("The string IS NOT valid.")
 
+	# If the choice is getSkew
 	elif (choice == '4'):
 		string = input("Enter the string: ")
 		n = input("Enter the value of n: ")
@@ -162,6 +166,7 @@ while (choice != '0'):
 		else:
 			print ("You entered an invalid input for n. n must be greater than or equal to 1")
 
+	# If the choice is getMaxSkewN
 	elif (choice == '5'):
 		string = input("Enter the string: ")
 		n = input("Enter the value of n: ")
@@ -171,6 +176,7 @@ while (choice != '0'):
 		else:
 			print ("You entered an invalid input for n. n must be greater than or equal to 1")
 
+	# If the choice is getMinSkewN
 	elif (choice == '6'):
 		string = input("Enter the string: ")
 		n = input("Enter the value of n: ")
@@ -180,8 +186,10 @@ while (choice != '0'):
 		else:
 			print ("You entered an invalid input for n. n must be greater than or equal to 1")
 
+	# If the choice is EXIT
 	elif (choice == '0'):
 		print ("Bye!")
 
+	# Else, notify the user that his/her input is invalid
 	else:
 		print ("Please enter a valid input.")
